@@ -1,0 +1,227 @@
+//Q1-positive number
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   int a;
+	   System.out.println("enter a number");
+	   a=in.nextInt();
+	   if(a>=0) System.out.println("Positive number");
+	   else System.out.println("Negative number");
+	}
+}
+
+
+
+
+//Q2-even odd number
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   int a;
+	   System.out.println("enter a number");
+	   a=in.nextInt();
+	   if(a%2==0) System.out.println("Even number");
+	   else System.out.println("Odd number");
+	}
+}
+
+
+
+
+//Q3-vowel or consonant
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   char a;
+	   System.out.println("enter an alphabet");
+	   a=in.next( ).charAt(0);
+           Character.toUpperCase(a);
+           if(a>='A'&&a<='Z')
+           {
+	     if(a=='A'||a=='E'||a=='I'||a=='O'||a=='U') System.out.println("Vowel");
+	     else System.out.println("Consonant");
+           }
+           else System.out.println("Not an alphabet");
+         }
+}
+
+//Q4-alphabet or not
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   char a;
+	   System.out.println("enter an alphabet");
+	   a=in.next( ).charAt(0);
+           Character.toUpperCase(a);
+           if(a>='A'&&a<='Z') system.out.println("Alphabet");
+	   else System.out.println("Not an alphabet");
+         }
+}
+
+
+
+//Q5-biggest of three numbers
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   int a,b,c;
+	   System.out.println("enter 3 number");
+	   a=in.nextInt();
+           b=in.nextInt();
+           c=in.nextInt();
+	   if(a>b&&a>c) System.out.println(a+"is big number");
+	   else if(b>a&&b>c) System.out.println(b+"is big number");
+           else if(a==b&&a==c) System.out.println("They are all equal");
+           else System.out.println(c+"is big number");
+	}
+}
+
+
+//Q6-Leap year or not
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   int a;
+	   System.out.println("enter a number");
+	   a=in.nextInt();
+	   if(a%400==0) System.out.println("Century leapyear");
+	   if(a%400!=0) { System.out.println("Not a Century leapyear"); return; }
+ 	   if(a%4==0) System.out.println("Leap year");
+	   else System.out.println("not a leapyear");
+	}
+}
+
+
+//Q7-print hello 5 times
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   for(int i=0;i<5;i++)
+	   System.out.println("hello");
+	}
+}
+
+
+//Q8-sum of natural numbers
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   int a;
+	   System.out.println("enter a number");
+	   a=in.nextInt();
+	   int sum=(a*(a+1))/2
+	   System.out.println("sum is"+sum);
+	}
+}
+
+//Q9-sum of n numbers using for loop
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   System.out.println("enter a number");
+	   int n=in.nextInt();
+	   int a[]=new int[2];
+           System.out.println("Enter the elements of array");
+	   for(int i=0;i<n;i++)
+ 	     a[i]=in.nextInt();
+	   int sum=0;
+	   for(int i=0;i<n;i++)
+	     sum+=a[i];
+	   System.out.println("Sum is "+sum);
+	}
+}
+
+
+//Q10-number of digits of an integer
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   Scanner in=new Scanner(System.in);
+	   System.out.println("enter a number");
+	   long n=in.nextLong();
+	   int i=0;
+	   while(n>0)
+	   {
+	     i++;
+	     n=n/10;
+	   }
+	   System.out.println("no of digits is"+i);	   
+	}
+}
